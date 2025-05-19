@@ -15,7 +15,6 @@ public class HorizontalSliderTests extends BaseTests {
         horizontalSlider.setSliderValue(value);
         assertEquals(horizontalSlider.getSliderValue(), value, "Slider value incorrect");
     }
-    /*
     @Test
     public void testHorizontalSliderDecimalNumber(){
         String value = "3.5";
@@ -24,6 +23,5 @@ public class HorizontalSliderTests extends BaseTests {
         horizontalSlider.setSliderValue(value);
         assertEquals(horizontalSlider.getSliderValue(), value, "Slider value incorrect");
     }
-    */
     
 }
