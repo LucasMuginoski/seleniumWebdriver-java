@@ -51,4 +51,12 @@ public class HomePage {
         clickLink("Context Menu");
         return new ContextMenuPage(driver);
     }
+    public IFramePage clickEditor(){
+        clickLink("WYSIWYG Editor");
+        return new IFramePage(driver);
+    }
+    public DinamicLoadingPage clickDinamicLoading(){
+        clickLink("Dynamic Loading");
+        return new DinamicLoadingPage(driver);
+    }
 }

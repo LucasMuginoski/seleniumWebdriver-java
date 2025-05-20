@@ -8,6 +8,8 @@ import org.testng.annotations.BeforeClass;
 import org.testng.annotations.BeforeMethod;
 import pages.HomePage;
 
+import java.util.concurrent.TimeUnit;
+
 public class BaseTests {
     private WebDriver driver;
     protected HomePage homePage;
@@ -15,6 +17,7 @@ public class BaseTests {
     @BeforeClass
     public void setUp(){
         driver = new ChromeDriver();
+        //driver.manage().timeouts().implicitlyWait(30, TimeUnit.SECONDS);
         driver.manage().window().maximize(); //can be fullscreen() or setSize();
     }
 
